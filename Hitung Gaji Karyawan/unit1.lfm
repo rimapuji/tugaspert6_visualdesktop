@@ -1,0 +1,172 @@
+object Form1: TForm1
+  Left = 952
+  Height = 513
+  Top = 174
+  Width = 482
+  Caption = 'PT Nusa Indah'
+  ClientHeight = 513
+  ClientWidth = 482
+  Color = clSilver
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 64
+    Height = 20
+    Top = 82
+    Width = 99
+    Caption = 'Nama Pegawai'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 64
+    Height = 20
+    Top = 120
+    Width = 51
+    Caption = 'Jabatan'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 64
+    Height = 20
+    Top = 160
+    Width = 69
+    Caption = 'Gaji Pokok'
+    ParentColor = False
+  end
+  object edtNama: TEdit
+    Left = 195
+    Height = 28
+    Top = 80
+    Width = 224
+    TabOrder = 0
+  end
+  object edtGapok: TEdit
+    Left = 195
+    Height = 28
+    Top = 160
+    Width = 224
+    TabOrder = 1
+  end
+  object cbJabatan: TComboBox
+    Left = 195
+    Height = 28
+    Top = 120
+    Width = 224
+    ItemHeight = 20
+    Items.Strings = (
+      'Direktur'
+      'Manajer'
+      'Karyawan'
+    )
+    OnChange = cbJabatanChange
+    TabOrder = 2
+  end
+  object Label4: TLabel
+    Left = 64
+    Height = 20
+    Top = 296
+    Width = 113
+    Caption = 'Status Tunjangan'
+    ParentColor = False
+  end
+  object edtTunjangan: TEdit
+    Left = 195
+    Height = 28
+    Top = 296
+    Width = 228
+    TabOrder = 3
+  end
+  object btnTotalGaji: TButton
+    Left = 64
+    Height = 31
+    Top = 344
+    Width = 358
+    Caption = 'Total Gaji'
+    OnClick = btnTotalGajiClick
+    TabOrder = 4
+  end
+  object Label5: TLabel
+    Left = 64
+    Height = 20
+    Top = 400
+    Width = 70
+    Caption = 'Gaji Bersih'
+    ParentColor = False
+  end
+  object edtGajiBersih: TEdit
+    Left = 195
+    Height = 28
+    Top = 392
+    Width = 224
+    TabOrder = 5
+  end
+  object btnIsiData: TButton
+    Left = 64
+    Height = 31
+    Top = 440
+    Width = 166
+    Caption = 'Isi Data Lagi'
+    OnClick = btnIsiDataClick
+    TabOrder = 6
+  end
+  object btnClose: TButton
+    Left = 251
+    Height = 31
+    Top = 440
+    Width = 168
+    Caption = 'Close'
+    Color = clNone
+    OnClick = btnCloseClick
+    TabOrder = 7
+  end
+  object Label6: TLabel
+    Left = 144
+    Height = 20
+    Top = 32
+    Width = 195
+    Caption = 'HITUNG GAJI KARYAWAN'
+    Font.CharSet = ANSI_CHARSET
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object rgStatus: TRadioGroup
+    Left = 64
+    Height = 67
+    Top = 208
+    Width = 355
+    AutoFill = True
+    Caption = 'Status'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 42
+    ClientWidth = 351
+    OnClick = rgStatusClick
+    TabOrder = 8
+    object RadioButton1: TRadioButton
+      Left = 6
+      Height = 21
+      Top = 0
+      Width = 339
+      Caption = 'Tetap'
+      TabOrder = 0
+    end
+    object RadioButton2: TRadioButton
+      Left = 6
+      Height = 21
+      Top = 21
+      Width = 339
+      Caption = 'Honorer'
+      TabOrder = 1
+    end
+  end
+end

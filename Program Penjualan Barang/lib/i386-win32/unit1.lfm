@@ -1,0 +1,168 @@
+object Form1: TForm1
+  Left = 316
+  Height = 441
+  Top = 177
+  Width = 446
+  Caption = 'Perhitungan Barang'
+  ClientHeight = 441
+  ClientWidth = 446
+  Color = clSilver
+  DesignTimePPI = 120
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 48
+    Height = 20
+    Top = 88
+    Width = 86
+    Caption = 'Kode Barang'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 48
+    Height = 20
+    Top = 128
+    Width = 56
+    Caption = 'Quantity'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 48
+    Height = 20
+    Top = 162
+    Width = 91
+    Caption = 'Nama Barang'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 48
+    Height = 20
+    Top = 200
+    Width = 90
+    Caption = 'Harga Satuan'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 48
+    Height = 20
+    Top = 240
+    Width = 62
+    Caption = 'Sub Total'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 48
+    Height = 20
+    Top = 280
+    Width = 45
+    Caption = 'Diskon'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 48
+    Height = 20
+    Top = 320
+    Width = 74
+    Caption = 'Total Bayar'
+    ParentColor = False
+  end
+  object cbKode: TComboBox
+    Left = 194
+    Height = 28
+    Top = 81
+    Width = 206
+    ItemHeight = 20
+    Items.Strings = (
+      'A01'
+      'B02'
+      'C03'
+      'D04'
+    )
+    OnChange = cbKodeChange
+    TabOrder = 0
+  end
+  object edtQTY: TEdit
+    Left = 194
+    Height = 28
+    Top = 120
+    Width = 206
+    OnChange = edtQTYChange
+    TabOrder = 1
+  end
+  object edtNama: TEdit
+    Left = 194
+    Height = 28
+    Top = 160
+    Width = 206
+    TabOrder = 2
+  end
+  object edtHarga: TEdit
+    Left = 194
+    Height = 28
+    Top = 200
+    Width = 206
+    TabOrder = 3
+  end
+  object edtSubTotal: TEdit
+    Left = 194
+    Height = 28
+    Top = 240
+    Width = 206
+    TabOrder = 4
+  end
+  object edtDiskon: TEdit
+    Left = 194
+    Height = 28
+    Top = 280
+    Width = 206
+    TabOrder = 5
+  end
+  object edtTotal: TEdit
+    Left = 194
+    Height = 28
+    Top = 320
+    Width = 206
+    TabOrder = 6
+  end
+  object btnHitung: TButton
+    Left = 48
+    Height = 31
+    Top = 378
+    Width = 94
+    Caption = 'Hitung'
+    OnClick = btnHitungClick
+    TabOrder = 7
+  end
+  object btnUlang: TButton
+    Left = 176
+    Height = 31
+    Top = 378
+    Width = 94
+    Caption = 'Ulang'
+    OnClick = btnUlangClick
+    TabOrder = 8
+  end
+  object btnKeluar: TButton
+    Left = 306
+    Height = 31
+    Top = 378
+    Width = 94
+    Caption = 'Keluar'
+    OnClick = btnKeluarClick
+    TabOrder = 9
+  end
+  object Label8: TLabel
+    Left = 72
+    Height = 29
+    Top = 29
+    Width = 301
+    Caption = 'Perhitungan Penjualan Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -23
+    Font.Name = 'Harlow Solid Italic'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsItalic]
+    ParentColor = False
+    ParentFont = False
+  end
+end
